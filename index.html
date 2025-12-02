@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Wishes 2025 🎄</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background particles */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 1;
+            user-select: none;
+            cursor: default;
+            animation: fall linear infinite;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.5em;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Intro overlay */
+        .intro-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0c4a6e 0%, #1e3a8a 50%, #581c87 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 0.8s ease;
+        }
+
+        .intro-overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .gift-box {
+            font-size: 120px;
+            animation: bounce 2s ease-in-out infinite;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            filter: drop-shadow(0 0 30px rgba(239, 68, 68, 0.6));
+        }
+
+        .gift-box:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .intro-text {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 30px;
+            text-align: center;
+            padding: 0 20px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Main container */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Glass card */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 30px;
+            padding: 40px 30px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Countdown */
+        .countdown {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .countdown-title {
+            color: #fbbf24;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .time-unit {
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 80px;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        }
+
+        .time-value {
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+        }
+
+        .time-label {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-top: 5px;
+        }
+
+        /* Name display */
+        .name-display {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .greeting-text {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #10b981, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            animation: gradient 3s ease infinite;
+            background-size: 200% 200%;
+        }
+
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .user-name {
+            color: #fbbf24;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(251, 191, 36, 0.6);
+            animation: float 3s ease-in-out infinite;
+            word-wrap: break-word;
+            word-break: break-word;
+            line-height: 1.3;
+            padding: 10px;
+            font-family: 'Segoe UI', 'Arial Unicode MS', 'Noto Sans', sans-serif;
+            direction: auto;
+            unicode-bidi: plaintext;
+        }
+
+        /* Support for various languages */
+        .user-name[lang="ar"], 
+        .user-name[lang="ur"], 
+        .user-name[lang="he"] {
+            direction: rtl;
+            text-align: center;
+        }
+
+        .user-name[lang="hi"],
+        .user-name[lang="bn"],
+        .user-name[lang="ta"],
+        .user-name[lang="te"],
+        .user-name[lang="mr"] {
+            font-family: 'Noto Sans Devanagari', 'Arial Unicode MS', sans-serif;
+        }
+
+        .user-name[lang="zh"],
+        .user-name[lang="ja"],
+        .user-name[lang="ko"] {
+            font-family: 'Noto Sans CJK', 'Microsoft YaHei', 'SimSun', sans-serif;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Image carousel */
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 350px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 30px 0;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .carousel-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .carousel-image.active {
+            opacity: 1;
+        }
+
+        /* Message */
+        .message {
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.6;
+            margin: 30px 0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .message span {
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Input form */
+        .input-form {
+            display: flex;
+            gap: 10px;
+            margin: 30px 0;
+        }
+
+        .name-input {
+            flex: 1;
+            padding: 18px 25px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #0f172a;
+            font-weight: 500;
+            outline: none;
+            transition: all 0.3s ease;
+            font-family: 'Segoe UI', 'Arial Unicode MS', 'Noto Sans', sans-serif;
+            direction: auto;
+            unicode-bidi: plaintext;
+        }
+
+        .name-input:focus {
+            background: white;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .name-input::placeholder {
+            text-align: center;
+        }
+
+        .submit-btn {
+            padding: 18px 35px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.6);
+        }
+
+        /* Share button */
+        .share-btn {
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+        }
+
+        /* Share Options */
+        .share-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .share-option-btn {
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .share-option-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .share-option-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .share-option-btn.facebook {
+            background: linear-gradient(135deg, #1877f2 0%, #0c63d4 100%);
+        }
+
+        .share-option-btn.twitter {
+            background: linear-gradient(135deg, #1da1f2 0%, #0c85d0 100%);
+        }
+
+        .share-option-btn.telegram {
+            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+        }
+
+        .share-option-btn.copy {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+        }
+
+        .share-icon {
+            font-size: 20px;
+        }
+
+        /* Copy Notification */
+        .copy-notification {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: slideInUp 0.5s ease;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Auto Copy Banner */
+        .auto-copy-banner {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            z-index: 999;
+            box-shadow: 0 8px 25px rgba(139, 92, 246, 0.5);
+            animation: slideInDown 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        @keyframes slideInDown {
+            from {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-100px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .share-options {
+                grid-template-columns: 1fr;
+            }
+
+            .auto-copy-banner {
+                width: 90%;
+                font-size: 12px;
+                padding: 12px 20px;
+            }
+        }
+
+        /* Decorative elements */
+        .decoration {
+            position: fixed;
+            font-size: 40px;
+            opacity: 0.6;
+            animation: sway 3s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        @keyframes sway {
+            0%, 100% { transform: rotate(-5deg); }
+            50% { transform: rotate(5deg); }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Ad Container Styles */
+        .ad-container {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .ad-container:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .ad-label {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .ad-space {
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .top-ad {
+            animation: slideDown 0.6s ease-out;
+        }
+
+        .bottom-ad {
+            animation: slideUp 0.6s ease-out;
+            margin-top: 30px;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive ad sizes */
+        @media (max-width: 600px) {
+            .ad-space {
+                min-height: 50px;
+            }
+        }
+
+        /* Music Control Button */
+        .music-control {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .music-btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: none;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            color: white;
+            font-size: 32px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(239, 68, 68, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .music-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 35px rgba(239, 68, 68, 0.7);
+        }
+
+        .music-btn:active {
+            transform: scale(0.95);
+        }
+
+        .music-btn::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: pulse-ring 2s ease-out infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.8);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.4);
+                opacity: 0;
+            }
+        }
+
+        .music-icon {
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .music-icon.playing {
+            animation: music-bounce 0.6s ease-in-out infinite;
+        }
+
+        @keyframes music-bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        .music-icon.paused {
+            animation: none;
+            opacity: 0.6;
+        }
+
+        .music-text {
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 5px 12px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 600px) {
+            .music-control {
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .music-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 28px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .glass-card {
+                padding: 30px 20px;
+            }
+            
+            .user-name {
+                font-size: 36px;
+            }
+            
+            .message {
+                font-size: 20px;
+            }
+
+            .time-unit {
+                min-width: 70px;
+                padding: 15px;
+            }
+
+            .time-value {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="gift-box" id="giftBox">🎁</div>
+        <div class="intro-text">👆 Tap the gift box to open! 👆</div>
+    </div>
+
+    <!-- Snowflakes -->
+    <div id="snowflakes"></div>
+
+    <!-- Auto Copy Banner -->
+    <div class="auto-copy-banner hidden" id="autoCopyBanner">
+        <span>🔗</span>
+        <span>Link Copied Automatically!</span>
+        <span>✅</span>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="decoration" style="top: 10%; left: 5%;">🎄</div>
+    <div class="decoration" style="top: 20%; right: 8%;">⭐</div>
+    <div class="decoration" style="bottom: 15%; left: 8%;">🎅</div>
+    <div class="decoration" style="bottom: 25%; right: 5%;">🔔</div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Top Ad Space -->
+        <div class="ad-container top-ad">
+            <div class="ad-label">Advertisement</div>
+            <div id="topAd" class="ad-space">
+                <!-- Google AdX Code Goes Here -->
+                <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+                <script>
+                    window.googletag = window.googletag || {cmd: []};
+                    googletag.cmd.push(function() {
+                        googletag.defineSlot('/YOUR_NETWORK_CODE/TOP_AD_UNIT', [[320, 50], [320, 100], [728, 90]], 'topAd')
+                            .addService(googletag.pubads());
+                        googletag.pubads().enableSingleRequest();
+                        googletag.enableServices();
+                    });
+                    googletag.cmd.push(function() { googletag.display('topAd'); });
+                </script>
+            </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="glass-card">
+            <div class="countdown">
+                <div class="countdown-title">🎄 Christmas Countdown 🎄</div>
+                <div id="countdown" class="countdown-timer"></div>
+            </div>
+        </div>
+
+        <!-- Input Form -->
+        <div class="glass-card" id="inputCard">
+            <div class="input-form">
+                <input type="text" id="nameInput" class="name-input" placeholder="Enter your name here...">
+                <button class="submit-btn" id="submitBtn">View ✨</button>
+            </div>
+        </div>
+
+        <!-- Greeting Card (Hidden initially) -->
+        <div class="glass-card hidden" id="greetingCard">
+            <div class="name-display">
+                <div class="greeting-text">Merry Christmas 🎅</div>
+                <div class="user-name" id="displayName"></div>
+            </div>
+
+            <div class="carousel" id="carousel">
+                <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800" class="carousel-image active" alt="Christmas">
+                <img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?w=800" class="carousel-image" alt="Christmas">
+                <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800" class="carousel-image" alt="Christmas">
+                <img src="https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?w=800" class="carousel-image" alt="Christmas">
+            </div>
+
+            <div class="message" id="randomMessage"></div>
+
+
+            <button class="share-btn" id="shareBtn">
+                <span>📱 Share on WhatsApp</span>
+            </button>
+
+            <div class="share-options">
+                <button class="share-option-btn facebook" id="facebookBtn">
+                    <span class="share-icon">📘</span>
+                    <span>Facebook</span>
+                </button>
+                <button class="share-option-btn twitter" id="twitterBtn">
+                    <span class="share-icon">🐦</span>
+                    <span>Twitter</span>
+                </button>
+                <button class="share-option-btn telegram" id="telegramBtn">
+                    <span class="share-icon">✈️</span>
+                    <span>Telegram</span>
+                </button>
+                <button class="share-option-btn copy" id="copyBtn">
+                    <span class="share-icon">📋</span>
+                    <span>Copy Link</span>
+                </button>
+            </div>
+
+            <div class="copy-notification hidden" id="copyNotification">
+                ✅ Link & Message Copied!
+            </div>
+        </div>
+
+        <!-- Bottom Ad Space -->
+        <div class="ad-container bottom-ad">
+            <div class="ad-label">Advertisement</div>
+            <div id="bottomAd" class="ad-space">
+                <!-- Google AdX Code Goes Here -->
+                <script>
+                    googletag.cmd.push(function() {
+                        googletag.defineSlot('/YOUR_NETWORK_CODE/BOTTOM_AD_UNIT', [[300, 250], [336, 280], [320, 50]], 'bottomAd')
+                            .addService(googletag.pubads());
+                        googletag.pubads().enableSingleRequest();
+                        googletag.enableServices();
+                    });
+                    googletag.cmd.push(function() { googletag.display('bottomAd'); });
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <button class="music-btn" id="musicBtn">
+            <span class="music-icon playing" id="musicIcon">🎵</span>
+        </button>
+        <span class="music-text">Music</span>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="assets/we-wish-you-a-merry-christmas-444573.mp3" type="audio/mpeg">
+        <source src="assets/we-wish-you-a-merry-christmas-444573.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        let userName = '';
+
+        // Create snowflakes
+        function createSnowflakes() {
+            const container = document.getElementById('snowflakes');
+            const snowflakeChars = ['❄', '❅', '❆', '🎄', '⭐'];
+            
+            for (let i = 0; i < 30; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.innerHTML = snowflakeChars[Math.floor(Math.random() * snowflakeChars.length)];
+                snowflake.style.left = Math.random() * 100 + '%';
+                snowflake.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                snowflake.style.animationDelay = Math.random() * 5 + 's';
+                snowflake.style.fontSize = (Math.random() * 20 + 15) + 'px';
+                container.appendChild(snowflake);
+            }
+        }
+
+        // Countdown timer
+        function updateCountdown() {
+            const christmas = new Date('December 25, 2025 00:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = christmas - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = '<div class="time-unit"><span class="time-value">🎉</span><span class="time-label">It\'s Christmas!</span></div>';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown').innerHTML = `
+                <div class="time-unit">
+                    <span class="time-value">${days}</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value">${hours}</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value">${minutes}</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value">${seconds}</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            `;
+        }
+
+        // Image carousel
+        function startCarousel() {
+            const images = document.querySelectorAll('.carousel-image');
+            let currentIndex = 0;
+
+            setInterval(() => {
+                images[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % images.length;
+                images[currentIndex].classList.add('active');
+            }, 3000);
+        }
+
+        // Gift box click
+        document.getElementById('giftBox').addEventListener('click', function() {
+            document.getElementById('introOverlay').classList.add('hidden');
+            const music = document.getElementById('bgMusic');
+            music.play().catch(e => console.log('Audio autoplay prevented:', e));
+        });
+
+        // Music control
+        const musicBtn = document.getElementById('musicBtn');
+        const musicIcon = document.getElementById('musicIcon');
+        const bgMusic = document.getElementById('bgMusic');
+        let isPlaying = true;
+
+        musicBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicIcon.classList.remove('playing');
+                musicIcon.classList.add('paused');
+                musicIcon.textContent = '🔇';
+                isPlaying = false;
+            } else {
+                bgMusic.play();
+                musicIcon.classList.remove('paused');
+                musicIcon.classList.add('playing');
+                musicIcon.textContent = '🎵';
+                isPlaying = true;
+            }
+        });
+
+        // Submit name
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            const nameInput = document.getElementById('nameInput');
+            userName = nameInput.value.trim();
+
+            if (userName === '') {
+                alert('Please enter your name! 🎄');
+                nameInput.focus();
+                return;
+            }
+
+            // Detect language and set direction
+            const displayNameElement = document.getElementById('displayName');
+            displayNameElement.textContent = userName;
+            
+            // Auto-detect language direction
+            const rtlPattern = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+            const devanagariPattern = /[\u0900-\u097F]/;
+            const chinesePattern = /[\u4E00-\u9FFF]/;
+            const japanesePattern = /[\u3040-\u309F\u30A0-\u30FF]/;
+            const koreanPattern = /[\uAC00-\uD7AF]/;
+            
+            if (rtlPattern.test(userName)) {
+                displayNameElement.setAttribute('lang', 'ar');
+                displayNameElement.style.direction = 'rtl';
+            } else if (devanagariPattern.test(userName)) {
+                displayNameElement.setAttribute('lang', 'hi');
+            } else if (chinesePattern.test(userName)) {
+                displayNameElement.setAttribute('lang', 'zh');
+            } else if (japanesePattern.test(userName)) {
+                displayNameElement.setAttribute('lang', 'ja');
+            } else if (koreanPattern.test(userName)) {
+                displayNameElement.setAttribute('lang', 'ko');
+            }
+
+            document.getElementById('inputCard').classList.add('hidden');
+            document.getElementById('greetingCard').classList.remove('hidden');
+            showRandomMessage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Auto-copy link after 1 second
+            setTimeout(() => {
+                autoCopyLink();
+            }, 1000);
+        });
+
+        // Enter key support
+        document.getElementById('nameInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('submitBtn').click();
+            }
+        });
+
+        // Share on WhatsApp
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            shareToApp('whatsapp');
+        });
+
+        // Facebook share
+        document.getElementById('facebookBtn').addEventListener('click', function() {
+            shareToApp('facebook');
+        });
+
+        // Twitter share
+        document.getElementById('twitterBtn').addEventListener('click', function() {
+            shareToApp('twitter');
+        });
+
+        // Telegram share
+        document.getElementById('telegramBtn').addEventListener('click', function() {
+            shareToApp('telegram');
+        });
+
+        // Copy link
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            copyToClipboard();
+        });
+
+        // Share function
+        function shareToApp(platform) {
+            const url = window.location.href.split('?')[0];
+            const shareUrl = `${url}?n=${encodeURIComponent(userName)}`;
+            
+            const messages = {
+                whatsapp: `🎄✨ *Merry Christmas!* ✨🎄\n\n*${userName}* has sent you a special Christmas gift! 🎁\n\n🎅 Tap the gift box and add your name to create your own personalized Christmas greeting!\n\n👇 Open the magic here:\n${shareUrl}\n\n🎄 Spread the Christmas joy! 🎄`,
+                
+                facebook: `🎄 Merry Christmas! 🎅\n\n${userName} has sent you a magical Christmas surprise! 🎁✨\n\nTap the gift box to experience the magic and create your own personalized greeting!\n\n${shareUrl}`,
+                
+                twitter: `🎄 Merry Christmas! 🎅\n\n${userName} sent me this amazing Christmas surprise! ✨🎁\n\nCreate your own personalized greeting here 👇\n\n${shareUrl}\n\n#MerryChristmas #ChristmasGreeting`,
+                
+                telegram: `🎄✨ Merry Christmas! ✨🎄\n\n${userName} has sent you a special Christmas gift! 🎁\n\n🎅 Tap the gift box and add your name to create your own magical Christmas greeting!\n\n👉 Open here: ${shareUrl}\n\n🎄 Spread the Christmas joy! 🎄`
+            };
+
+            const shareLinks = {
+                whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(messages.whatsapp)}`,
+                facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(messages.facebook)}`,
+                twitter: `https://twitter.com/intent/tweet?text=${encodeURIComponent(messages.twitter)}`,
+                telegram: `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(messages.telegram)}`
+            };
+
+            if (shareLinks[platform]) {
+                window.open(shareLinks[platform], '_blank');
+            }
+        }
+
+        // Copy to clipboard
+        function copyToClipboard() {
+            const url = window.location.href.split('?')[0];
+            const shareUrl = `${url}?n=${encodeURIComponent(userName)}`;
+            const message = `🎄✨ Merry Christmas! ✨🎄\n\n${userName} has sent you a special Christmas gift! 🎁\n\n🎅 Tap the gift box and add your name to create your own magical Christmas greeting!\n\n👉 Open here: ${shareUrl}\n\n🎄 Spread the Christmas joy! 🎄`;
+
+            // Copy both message and URL
+            const textToCopy = `${message}`;
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showCopyNotification();
+                }).catch(err => {
+                    fallbackCopy(textToCopy);
+                });
+            } else {
+                fallbackCopy(textToCopy);
+            }
+        }
+
+        // Fallback copy method
+        function fallbackCopy(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showCopyNotification();
+            } catch (err) {
+                alert('Please copy manually:\n\n' + text);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // Show copy notification
+        function showCopyNotification() {
+            const notification = document.getElementById('copyNotification');
+            notification.classList.remove('hidden');
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 3000);
+        }
+
+        // Auto-copy link function
+        // Auto-copy full message + link (works after user tap)
+function autoCopyLink() {
+    const url = window.location.href.split('?')[0];
+    const shareUrl = `${url}?n=${encodeURIComponent(userName)}`;
+
+    const fullMessage = `🎄✨ Merry Christmas! ✨🎄
+
+${userName} has sent you a special Christmas gift! 🎁
+
+🎅 Tap the gift box and add your name to create your own magical Christmas greeting!
+
+👉 Open here: ${shareUrl}
+
+🎄 Spread the Christmas joy! 🎄`;
+
+    navigator.clipboard.writeText(fullMessage).then(() => {
+        showAutoCopyBanner();
+    }).catch(err => {
+        console.log("Copy failed:", err);
+    });
+}
+
+
+        // Show auto-copy banner
+        function showAutoCopyBanner() {
+            const banner = document.getElementById('autoCopyBanner');
+            banner.classList.remove('hidden');
+            setTimeout(() => {
+                banner.classList.add('hidden');
+            }, 3000);
+        }
+
+        // Check URL for name parameter
+        function checkUrlName() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const nameParam = urlParams.get('n');
+
+            if (nameParam) {
+                userName = decodeURIComponent(nameParam);
+                const displayNameElement = document.getElementById('displayName');
+                displayNameElement.textContent = userName;
+                
+                // Auto-detect language direction for URL parameter
+                const rtlPattern = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+                const devanagariPattern = /[\u0900-\u097F]/;
+                const chinesePattern = /[\u4E00-\u9FFF]/;
+                const japanesePattern = /[\u3040-\u309F\u30A0-\u30FF]/;
+                const koreanPattern = /[\uAC00-\uD7AF]/;
+                
+                if (rtlPattern.test(userName)) {
+                    displayNameElement.setAttribute('lang', 'ar');
+                    displayNameElement.style.direction = 'rtl';
+                } else if (devanagariPattern.test(userName)) {
+                    displayNameElement.setAttribute('lang', 'hi');
+                } else if (chinesePattern.test(userName)) {
+                    displayNameElement.setAttribute('lang', 'zh');
+                } else if (japanesePattern.test(userName)) {
+                    displayNameElement.setAttribute('lang', 'ja');
+                } else if (koreanPattern.test(userName)) {
+                    displayNameElement.setAttribute('lang', 'ko');
+                }
+                
+                document.getElementById('inputCard').classList.add('hidden');
+                document.getElementById('greetingCard').classList.remove('hidden');
+            }
+        }
+
+        // Initialize
+        createSnowflakes();
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+        startCarousel();
+        checkUrlName();
+
+        // Disable right-click
+        document.addEventListener('contextmenu', e => e.preventDefault());
+
+        // 20 Random Christmas Wishes
+const christmasMessages = [
+    "🎄 May your Christmas sparkle with joy and warmth ✨",
+    "🎅 Wishing you love, peace & magical moments this Christmas 🎁",
+    "✨ May this Christmas bring happiness to your heart & home 🎄",
+    "🎄 Sending you blessings, joy & festive cheer 🎉",
+    "🎁 May your season shine bright like Christmas lights ✨",
+    "🌟 Hope your Christmas is filled with sweet surprises 🎅",
+    "🎄 Joy, love & peace — that’s my wish for you this Christmas ❤️",
+    "✨ Wishing you a Christmas full of magical memories 🎁",
+    "🎅 May Santa bring everything you wished for 🎄",
+    "💖 Warm hugs & Christmas blessings to you and your family ✨",
+    "🎉 May your days be merry & your heart be light 🎄",
+    "🎄 Let the spirit of Christmas fill your heart with joy 🎁",
+    "🎅 May this festive season be the best one yet ✨",
+    "🌟 Christmas magic is in the air — enjoy every moment 🎄",
+    "🎁 Wishing you happiness wrapped in love this Christmas ❤️",
+    "✨ May the holidays bring you endless joy & blessings 🎅",
+    "🎄 Warm wishes for a peaceful & joyful Christmas 🎉",
+    "🎅 May your home be filled with love & Christmas cheer ✨",
+    "🌟 Believe in the magic of Christmas 🎁",
+    "🎄 Sending Christmas love, joy & unlimited blessings ❤️"
+];
+
+// Function to display random message
+function showRandomMessage() {
+    const msgBox = document.getElementById("randomMessage");
+    const randomText = christmasMessages[Math.floor(Math.random() * christmasMessages.length)];
+
+    msgBox.innerHTML = `<span>${randomText}</span>`;
+}
+
+    </script>
+</body>
+</html>
